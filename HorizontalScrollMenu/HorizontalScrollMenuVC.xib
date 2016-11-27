@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderMenuVC" customModule="HorizontalScrollMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="mainContentView" destination="0a3-WY-9HI" id="lDI-f7-e1P"/>
+                <outlet property="mainContentViewWidthConstraint" destination="DNz-wm-Ohp" id="yWw-Eh-8rd"/>
+                <outlet property="mainScrollView" destination="nWY-t0-Rrs" id="duA-sb-OPF"/>
+                <outlet property="menuScrollView" destination="kYP-3v-wPP" id="l1c-Yv-LrS"/>
+                <outlet property="menuView" destination="LS0-dc-eDK" id="oar-eV-UP3"/>
+                <outlet property="menuViewWidthConstraint" destination="FGP-D6-rQn" id="l5T-t2-6rB"/>
+                <outlet property="overlayScrollView" destination="JAH-aX-I13" id="Pdj-1e-baJ"/>
+                <outlet property="overlayView" destination="v3R-jK-Rpd" id="yYV-7u-xAz"/>
+                <outlet property="overlayViewWidthConstraint" destination="DGE-In-PoO" id="u9y-pz-eUg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-3v-wPP">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-dc-eDK">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="FGP-D6-rQn"/>
+                                <constraint firstAttribute="height" constant="50" id="FGe-Qt-ZeT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LS0-dc-eDK" secondAttribute="bottom" id="4ag-D2-I2A"/>
+                        <constraint firstAttribute="trailing" secondItem="LS0-dc-eDK" secondAttribute="trailing" id="6Ea-0I-HLg"/>
+                        <constraint firstItem="LS0-dc-eDK" firstAttribute="top" secondItem="kYP-3v-wPP" secondAttribute="top" id="crh-GM-soH"/>
+                        <constraint firstItem="LS0-dc-eDK" firstAttribute="leading" secondItem="kYP-3v-wPP" secondAttribute="leading" id="jD8-xr-il4"/>
+                        <constraint firstAttribute="height" constant="50" id="uch-IX-AXb"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="v9l-0V-fVJ"/>
+                    </connections>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWY-t0-Rrs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0a3-WY-9HI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="DNz-wm-Ohp"/>
+                                <constraint firstAttribute="height" constant="617" id="lO9-C2-0eF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0a3-WY-9HI" secondAttribute="bottom" id="S0F-7I-hdt"/>
+                        <constraint firstItem="0a3-WY-9HI" firstAttribute="top" secondItem="nWY-t0-Rrs" secondAttribute="top" id="Yhh-Jq-xj9"/>
+                        <constraint firstItem="0a3-WY-9HI" firstAttribute="leading" secondItem="nWY-t0-Rrs" secondAttribute="leading" id="jRm-qR-6KI"/>
+                        <constraint firstAttribute="trailing" secondItem="0a3-WY-9HI" secondAttribute="trailing" id="wDX-Td-yW7"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aiJ-TG-5LF"/>
+                    </connections>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAH-aX-I13">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-jK-Rpd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="DGE-In-PoO"/>
+                                <constraint firstAttribute="height" constant="50" id="bpE-TZ-ex6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="99t-3p-A0b"/>
+                        <constraint firstItem="v3R-jK-Rpd" firstAttribute="top" secondItem="JAH-aX-I13" secondAttribute="top" id="cfV-bz-Stf"/>
+                        <constraint firstItem="v3R-jK-Rpd" firstAttribute="leading" secondItem="JAH-aX-I13" secondAttribute="leading" id="jS9-I1-K0K"/>
+                        <constraint firstAttribute="trailing" secondItem="v3R-jK-Rpd" secondAttribute="trailing" id="lEk-hQ-QtB"/>
+                        <constraint firstAttribute="bottom" secondItem="v3R-jK-Rpd" secondAttribute="bottom" id="nbC-BZ-0Vc"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Sho-OL-GKq"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kYP-3v-wPP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Eb-G1-F4i"/>
+                <constraint firstItem="JAH-aX-I13" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5DS-NU-iwb"/>
+                <constraint firstItem="nWY-t0-Rrs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AbI-Lt-pJc"/>
+                <constraint firstAttribute="trailing" secondItem="JAH-aX-I13" secondAttribute="trailing" id="Omf-z0-0Bi"/>
+                <constraint firstAttribute="trailing" secondItem="kYP-3v-wPP" secondAttribute="trailing" id="VVe-eY-UWn"/>
+                <constraint firstAttribute="trailing" secondItem="nWY-t0-Rrs" secondAttribute="trailing" id="Zu6-XD-NX7"/>
+                <constraint firstAttribute="bottom" secondItem="kYP-3v-wPP" secondAttribute="bottom" id="e4l-7D-C7K"/>
+                <constraint firstItem="kYP-3v-wPP" firstAttribute="top" secondItem="nWY-t0-Rrs" secondAttribute="bottom" id="fja-WA-kTV"/>
+                <constraint firstItem="nWY-t0-Rrs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uYD-b3-3Ea"/>
+                <constraint firstAttribute="bottom" secondItem="JAH-aX-I13" secondAttribute="bottom" id="ztS-2c-PKb"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
