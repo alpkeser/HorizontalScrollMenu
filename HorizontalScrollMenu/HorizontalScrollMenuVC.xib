@@ -9,17 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderMenuVC" customModule="HorizontalScrollMenu" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalScrollMenuVC" customModule="HorizontalScrollMenu" customModuleProvider="target">
             <connections>
                 <outlet property="mainContentView" destination="0a3-WY-9HI" id="lDI-f7-e1P"/>
-                <outlet property="mainContentViewWidthConstraint" destination="DNz-wm-Ohp" id="yWw-Eh-8rd"/>
+                <outlet property="mainContentViewWidthConstraint" destination="byt-4A-HC9" id="ehT-Is-gv3"/>
                 <outlet property="mainScrollView" destination="nWY-t0-Rrs" id="duA-sb-OPF"/>
                 <outlet property="menuScrollView" destination="kYP-3v-wPP" id="l1c-Yv-LrS"/>
                 <outlet property="menuView" destination="LS0-dc-eDK" id="oar-eV-UP3"/>
-                <outlet property="menuViewWidthConstraint" destination="FGP-D6-rQn" id="l5T-t2-6rB"/>
+                <outlet property="menuViewWidthConstraint" destination="ZKn-If-uwY" id="I5h-4q-4et"/>
                 <outlet property="overlayScrollView" destination="JAH-aX-I13" id="Pdj-1e-baJ"/>
                 <outlet property="overlayView" destination="v3R-jK-Rpd" id="yYV-7u-xAz"/>
-                <outlet property="overlayViewWidthConstraint" destination="DGE-In-PoO" id="u9y-pz-eUg"/>
+                <outlet property="overlayViewWidthConstraint" destination="NBT-IJ-P5W" id="ChC-AD-JDA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +35,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="375" id="FGP-D6-rQn"/>
                                 <constraint firstAttribute="height" constant="50" id="FGe-Qt-ZeT"/>
                             </constraints>
                         </view>
@@ -57,10 +56,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0a3-WY-9HI">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="375" id="DNz-wm-Ohp"/>
-                                <constraint firstAttribute="height" constant="617" id="lO9-C2-0eF"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
@@ -80,7 +75,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="375" id="DGE-In-PoO"/>
                                 <constraint firstAttribute="height" constant="50" id="bpE-TZ-ex6"/>
                             </constraints>
                         </view>
@@ -102,11 +96,15 @@
                 <constraint firstItem="kYP-3v-wPP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Eb-G1-F4i"/>
                 <constraint firstItem="JAH-aX-I13" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5DS-NU-iwb"/>
                 <constraint firstItem="nWY-t0-Rrs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AbI-Lt-pJc"/>
+                <constraint firstItem="v3R-jK-Rpd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="NBT-IJ-P5W"/>
                 <constraint firstAttribute="trailing" secondItem="JAH-aX-I13" secondAttribute="trailing" id="Omf-z0-0Bi"/>
                 <constraint firstAttribute="trailing" secondItem="kYP-3v-wPP" secondAttribute="trailing" id="VVe-eY-UWn"/>
+                <constraint firstItem="LS0-dc-eDK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ZKn-If-uwY"/>
                 <constraint firstAttribute="trailing" secondItem="nWY-t0-Rrs" secondAttribute="trailing" id="Zu6-XD-NX7"/>
+                <constraint firstItem="0a3-WY-9HI" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="byt-4A-HC9"/>
                 <constraint firstAttribute="bottom" secondItem="kYP-3v-wPP" secondAttribute="bottom" id="e4l-7D-C7K"/>
                 <constraint firstItem="kYP-3v-wPP" firstAttribute="top" secondItem="nWY-t0-Rrs" secondAttribute="bottom" id="fja-WA-kTV"/>
+                <constraint firstItem="0a3-WY-9HI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="-50" id="md3-b8-TeB"/>
                 <constraint firstItem="nWY-t0-Rrs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uYD-b3-3Ea"/>
                 <constraint firstAttribute="bottom" secondItem="JAH-aX-I13" secondAttribute="bottom" id="ztS-2c-PKb"/>
             </constraints>

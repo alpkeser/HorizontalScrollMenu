@@ -68,7 +68,7 @@ class HorizontalScrollMenuVC: UIViewController, UIScrollViewDelegate {
     }
     
     private func setupViewControllers() {
-        let vcCount = viewControllers.count
+        let vcCount = viewControllers.count - 1
         let contentSize = screenWidth * Double(vcCount)
         mainContentViewWidthConstraint.constant = CGFloat(contentSize)
         
